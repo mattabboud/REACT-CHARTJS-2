@@ -1,9 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
-import SegmentChartGrandient from "./SegmentChartGrandient";
+// import SegmentChartGrandient from "./SegmentChartGrandient";
+import Barchart from "./components/BarChart";
 
 function App() {
-  return <SegmentChartGrandient />;
+  return <Barchart />;
 }
 
 export default App;

@@ -24,11 +24,13 @@ ChartJS.register(
 );
 
 const scores = [6, 5, 5, 5, 3, 4, 6, 4, 5];
-const labels = [100, 200, 300, 400, 500, 600, 700];
+const labels = ["Matthew", "Mark", "Luke", "Johm", "Mary", "Susie", "Jessica"];
 
 const options = {
   fill: true,
-  animations: false,
+  animations: true,
+  indexAxis: "x",
+  maxBarThickness: 100,
   scales: {
     y: {
       min: 0,
@@ -47,11 +49,13 @@ export default function BarChart() {
     return {
       datasets: [
         {
-          label: "Mis datos",
+          label: "Results",
           tension: 0.3,
           data: scores,
-          borderColor: "rgb(75, 192, 192)",
-          backgroundColor: "rgba(75, 192, 192, 0.3)",
+          borderColor: "blue",
+          backgroundColor: "blue",
+          borderWidth: 10,
+          hoverBorderColor: "black",
         },
       ],
       labels,
